@@ -1,0 +1,13 @@
+{
+    // Remember, Babel presets run in inverse order
+    "presets": [
+        "@babel/preset-env",
+        [
+            "@babel/preset-react",
+            {
+                "runtime": "automatic"
+            }
+        ],
+        "@babel/preset-typescript"
+    ]
+}
