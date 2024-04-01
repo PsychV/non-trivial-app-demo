@@ -18,18 +18,7 @@ export default {
                 test: /\.tsx?$/,
                 exclude: /node_modules/,
                 use: ["babel-loader"]
-            }/*,
-            {
-                test: /\.css$/,
-                exclude: /node_modules/,
-                use:["style-loader", "css-loader"]
-            },
-            {
-                test: /\(.png|svg|jpg|gif)$/,
-                exclude: /node_modules/,
-                use: "file-loader",
             }
-            */
         ]
     },
     plugins: [
@@ -37,15 +26,8 @@ export default {
             template: path.join(__dirname, "src", "views", "index.html")
         })
     ],
-    devServer: {
-        host: "localhost",
-        historyApiFallback: true,
-        port: 3000,
-        open: true,
-        hot: true
-    },
     resolve: {
-        modules: [__dirname, "src", "node_modules"],
+        modules: [__dirname, "src", "../node_modules"],
         extensions: [".js", ".jsx", ".tsx", ".ts", ".*"]
     }
 };
