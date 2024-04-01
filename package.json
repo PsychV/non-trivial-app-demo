@@ -7,14 +7,17 @@
     "start": "",
     "webpack:watch": "npm run webpack:watch -w frontend",
     "server:watch": "npm run server:watch -w backend"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PsychV/non-trivial-app-demo.git"
   },
   "author": "",
   "license": "ISC",
-  "workspaces":["frontend", "backend"],
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
   "bugs": {
     "url": "https://github.com/PsychV/non-trivial-app-demo/issues"
   },
