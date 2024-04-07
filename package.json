@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "",
+    "start": "concurrently --prefix \"[{name}]\" --names \"WEBPACK,CSS,SERVER\" -c \"yellow,blue,magenta\" \"npm run webpack:watch\" \"npm run css:watch\" \"npm run server:watch\"",
     "webpack:watch": "npm run webpack:watch -w frontend",
-    "server:watch": "npm run server:watch -w backend"
+    "server:watch": "npm run server:watch -w backend",
+    "css:watch": "npm run css:watch -w frontend"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
     "url": "https://github.com/PsychV/non-trivial-app-demo/issues"
   },
   "homepage": "https://github.com/PsychV/non-trivial-app-demo#readme",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
 }
