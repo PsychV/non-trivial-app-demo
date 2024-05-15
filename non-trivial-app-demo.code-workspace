@@ -1,10 +1,6 @@
 {
     "folders": [
       {
-        "path": "./",
-        "name": "project-root"
-      },
-      {
         "path": "./backend",
         "name": "backend"
       },

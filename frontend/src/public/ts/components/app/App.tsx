@@ -1,9 +1,9 @@
-import LandingPage from "../LandingPage/LandingPage";
+import Header from "../header/Header";
 
 export default function App() {
     return (
         <div>
-            <LandingPage />
+            <Header />
         </div>
     );
 }
